@@ -1,3 +1,9 @@
 document.getElementById("clickMeButton").addEventListener("click", function () {
-  document.getElementById("message").textContent = "Button clicked!";
+  var textInput = document.getElementById("textInput").value;
+  var message = document.getElementById("message");
+  if (textInput) {
+    message.textContent = "¡Has escrito: " + textInput + "!";
+  } else {
+    message.textContent = "¡Botón clickeado!";
+  }
 });
